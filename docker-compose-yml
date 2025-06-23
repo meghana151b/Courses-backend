@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    image: meghanaa11/courses
+    ports:
+      - "8087:8080"  # hostPort:containerPort
+
+  frontend:
+    image: meghanaa11/courses-frontend
+    ports:
+      - "3000:3000"

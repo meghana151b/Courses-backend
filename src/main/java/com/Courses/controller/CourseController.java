@@ -23,7 +23,7 @@ public class CourseController {
     @Autowired
     private CourseService courseService;
 
-    // ✅ Create Course using DTO
+  
     @PostMapping
     public ResponseEntity<Course> createCourse(@RequestBody CourseRequestDTO request) {
         Course course = courseService.createCourse(request);
